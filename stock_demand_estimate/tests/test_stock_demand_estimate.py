@@ -93,12 +93,12 @@ class TestStockDemandEstimate(SavepointCase):
                 'There should be 12 lines.',
             )
             self.assertEqual(
-                sheet.date_start,
+                sheet.date_start.strftime("%Y-%m-%d"),
                 '1943-01-01',
                 'The date start should be 1943-01-01',
             )
             self.assertEqual(
-                sheet.date_end,
+                sheet.date_end.strftime("%Y-%m-%d"),
                 '1943-12-31',
                 'The date end should be 1943-12-31',
             )
